@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="shortcut icon" type="web-icon" href="mas1.png">
+    <script src="show.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+</head>
+<body>
+    <nav>
+        <!-- <div class="navigation container"> -->
+            <ul class="sidebar">
+                <li onclick="hide()" class="right"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Features">Features</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Join Us">Join Us</a></li>
+            </ul>
+        <!-- </div> -->
+        <!-- <div class="navigation container"> -->
+            <ul>
+                <li><a href="#"><img src="logo.png" alt="logo"></a></li>
+                <li><a href="#" class="hideonMobile">Home</a></li>
+                <li><a href="#Features" class="hideonMobile">Features</a></li>
+                <li><a href="#Menu" class="hideonMobile">Menu</a></li>
+                <li><a href="#Join Us" class="hideonMobile">Join Us</a></li>
+                <li onclick="show()" class="hide"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg></li>
+            </ul>
+        <!-- </div> -->
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <div class="hero_image">
+                <img src="hero_image.png" alt="hero">
+            </div>
+            <div class="hero_content">
+                <div class="tag">50% Off on All Product</div>
+                <h1>Enjoy Your Delicious Food</h1>
+                <p>We Are Always Open For You. Enjoy Our 24/7 Services. Order Will Be On Your Doorstep</p>
+                <button class="explore_btn">Order Now</button>
+            </div>
+        </div>
+        <section class="features">
+            <div class="feature" id="Features">
+                <img src="discount.png" alt="discount" class="mid">
+                <div class="feature_content">
+                    <h3>Discount Voucher</h3>
+                    If You Have Any Coupon Code Then Enter your Coupon Code
+                </div>
+            </div>
+            <div class="feature" id="Features">
+                <img src="fresh.png" alt="fresh" class="mid">
+                <div class="feature_content">
+                    <h3>Fresh Healthy Food</h3>
+                    We Provide Healthy, Fresh And Hygienic Food
+                </div>
+            </div>
+            <div class="feature" id="Features">
+                <img src="delivery.png" alt="delivery" class="mid">
+                <div class="feature_content">
+                    <h3>Fast Home Delivery</h3>
+                    Our Delivery Is Very Fast And Open For 24/7
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <div class="menu" id="Menu">
+            <div class="tag">Our Menu</div>
+            <h2>Explore Our Menu</h2>
+            <div class="grid">
+                <div class="item1">
+                    <img class="grid-image" src="grid_image1.png" alt="image1">
+                </div>
+                <div class="item2">
+                    <img class="grid-image" src="grid_image2.png" alt="image1">
+                </div>
+                <div class="item3">
+                    <img class="grid-image" src="grid_image3.png" alt="image1">
+                </div>
+                <div class="item4">
+                    <img class="grid-image" src="grid_image4.png" alt="image1">
+                </div>
+                <div class="item5">
+                    <img class="grid-image" src="grid_image5.png" alt="image1">
+                </div>
+                <div class="item6">
+                    <img class="grid-image" src="grid_image6.png" alt="image1">
+                </div>
+                <div class="item7">
+                    <img class="grid-image" src="grid_image7.png" alt="image1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="Join Us">
+        <div class="footer_container container">
+            <div class="footer_logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="link_list">
+                <h3>Main Links</h3>
+                <ul>
+                    <li>Order Tracking</li>
+                    <li>New Order</li>
+                    <li>Contact Us</li>
+                    <li>News & Blogs</li>
+                </ul>
+            </div>
+            <div class="link_list">
+                <h3>Support</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="news_letter">
+                <h3>Join Our News letter</h3>
+                <input type="email" placeholder="Enter your Email...">
+                <button class="Enter" type="submit">submit</button>
+                <h3>Follow Us</h3>
+                <div class="icon_container">
+                        <a data="Facebook" style="--color: #4269be;" href="https://facebook.com/home"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a data="Twitter" style="--color: Black;" href="https://x.com/home" id="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a data="Instagram" style="--color: #C13584;" href="https://www.instagram.com/iam_blood.reaper/" id="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a data="YouTube" style="--color: Red;" href="https://www.youtube.com/@themptyplayz" id="youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
